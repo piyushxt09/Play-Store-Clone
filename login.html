@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Specify your Google Client ID -->
+    <meta name="google-signin-client_id"
+        content="433464861797-6opjp7rffab3nrv3kqqki34pq0111ob0.apps.googleusercontent.com.apps.googleusercontent.com">
+</head>
+
+<body>
+    <nav>
+        <img src="/Images/Logo.svg" alt="">
+        <h2>Play Store</h2>
+    </nav>
+    <section id="Signup">
+        <h2 class="h2">.Log in</h2>
+        <div class="login">
+            <h2>Haven't Sign up?<a href="Signup.html">Sign in</a></h2>
+            <hr>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </div>
+        <form id="signupForm">
+            <input class="input" type="text" placeholder="Email" id="email"> <br>
+            <input class="input" type="password" placeholder="Password" id="password"><br>
+            <input type="submit" value="Log in" id="submitBtn">
+        </form>
+    </section>
+</body>
+
+</html>

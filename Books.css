@@ -1,0 +1,98 @@
+.Booksh2 {
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    transform: translate(-4%, -15%);
+}
+html{
+    scroll-behavior: smooth;
+}
+#Books {
+    position: absolute;
+    top: 50%;
+    width: 95vw;
+    height: 55vh;
+    padding: 10px;
+    left: 50%;
+    z-index: -1;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+#Books::-webkit-scrollbar {
+    visibility: hidden;
+  }
+.fa-caret-left,
+.fa-caret-right {
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    outline: none;
+    visibility: hidden;
+    cursor: pointer;
+    font-size: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.fa-caret-left {
+    top: 290px;
+    left: 12px;
+}
+
+.fa-caret-right {
+    top: 290px;
+    right: 12px;
+    z-index: 2;
+}
+
+#Books .BooksContent {
+    width: 250px;
+    height: 54vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+#Books .BooksContent  .booksTitle{
+   max-width: 200px;
+   margin-left: 10px;
+}
+#Books .BooksContent  .booksTitle div{
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  gap: 10px;
+}
+#Books .BooksContent  .booksTitle h2{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#Books .BooksContent:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+#Books .BooksContent .booksThumbnail {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 221px;
+    border-radius: 6px;
+    height: 44vh;
+    transform: scale(0.9);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

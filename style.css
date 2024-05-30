@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+#navbar {
+    display: flex;
+    width: 100vw;
+    /* border: 1px solid red; */
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    justify-content: space-between;
+}
+
+#navbar.navScroll {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#navbar nav {
+    display: flex;
+    padding: 4px;
+    align-items: center;
+}
+
+#navbar nav img {
+    width: 70px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+#navbar nav h2 {
+    margin-left: -13px;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(95, 99, 104);
+    font-family: "Poppins", sans-serif;
+
+}
+
+.search-fields {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-evenly;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    color: black;
+    left: 44%;
+    z-index: 2;
+    top: 1%;
+    transform: translate(-44%, -1%);
+}
+
+.search-fields.active {
+    visibility: visible;
+}
+
+.search-fields i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#navbar nav .list .searchBar {
+    width: 600px;
+    border: none;
+    height: 35px;
+    outline: none;
+    padding: 8px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+#navbar nav .list {
+    margin-left: 40px;
+}
+
+#navbar nav .list ul {
+    display: flex;
+    gap: 10px;
+    visibility: visible;
+}
+
+#navbar nav .list ul.list-active {
+    visibility: hidden;
+}
+
+#navbar nav .list ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+#navbar nav .list ul li a {
+    text-decoration: none;
+    color: rgb(95, 99, 104);
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 6px;
+}
+
+#navbar nav .list ul li a.active {
+    color: rgb(194, 0, 0);
+}
+
+#navbar nav .list ul li a:hover {
+    color: rgb(194, 0, 0);
+}
+#navbar nav .list ul li a.dark:hover{
+    color: rgb(123, 37, 37);
+}
+
+#navbar .list-function {
+    /* border: 1px solid #ff0000; */
+    margin-right: 30px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+#navbar .list-function h5 {
+    margin-right: -20px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+#navbar .list-function .fa-toggle-off {
+    font-size: 26px;
+    color: rgb(149, 16, 16);
+    transition: 0.4s;
+}
+
+#navbar .list-function .fa-toggle-on {
+    font-size: 26px;
+    color: black;
+    display: none;
+    transition: 0.4s ease-in-out;
+}
+
+#navbar .list-function i {
+    cursor: pointer;
+    font-size: 22px;
+    color: rgb(95, 99, 104);
+}
+
+#navbar .list-function img {
+    cursor: pointer;
+    width: 40px;
+    height: 38px;
+    border-radius: 100%;
+    transform: scale(1.2);
+    border: 1px solid black;
+}
+
+#navbar .list-function i:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* --------------------------------middle section ------------------------------------ */
+.middleSection {
+    display: flex;
+    color: white;
+    background-color: black;
+    width: 90vw;
+    border: none;
+    outline: none;
+    height: 380px;
+    border-radius: 20px;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    cursor: pointer;
+    transform: translate(-50%, -30%);
+}
+
+.middleSection p {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 35px;
+    font-weight: 600;
+    width: 800px;
+}
+
+.middleSection img {
+    height: 380px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 700px;
+}
+
+/* -------------------last section ------------------------ */
+#end-section {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 90vw;
+    transform: translate(-50%, -80%);
+}
+
+#end-section h2 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+#end-section h5 {
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
